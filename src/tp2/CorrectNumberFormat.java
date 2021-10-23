@@ -15,9 +15,6 @@ public class CorrectNumberFormat {
 	        
 	        try{//convert it to number
 	        int num = Integer.parseInt(line);
-
-	        // todo print the answer based on the input
-
 	        System.out.println("It's a number :)");
 	        }catch(Exception e){
 	        System.out.println("It's not a number :(");
