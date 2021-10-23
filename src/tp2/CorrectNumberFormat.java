@@ -5,20 +5,22 @@ import java.util.Scanner;
 public class CorrectNumberFormat {
 
     public static void main(String[] args) {
-        System.out.println("Enter a number");
+	        System.out.println("Enter a number");
 
-        Scanner scanner = new Scanner(System.in);
+	        Scanner scanner = new Scanner(System.in);
 
-        //get input from console
-        String line = scanner.nextLine();
+	        //get input from console
+	        String line = scanner.nextLine();
 
-        //convert it to number
-        int num = Integer.parseInt(line);
+	        
+	        try{//convert it to number
+	        int num = Integer.parseInt(line);
 
-        // todo print the answer based on the input
+	        // todo print the answer based on the input
 
-        System.out.println("It's a number :)");
-
-        System.out.println("It's not a number :(");
-    }
+	        System.out.println("It's a number :)");
+	        }catch(Exception e){
+	        System.out.println("It's not a number :(");
+	        }
+	    }
 }
