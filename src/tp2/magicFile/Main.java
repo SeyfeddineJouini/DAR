@@ -21,9 +21,14 @@ public class Main {
 
     private static String getFileContent(String fileName) {
         File file = new File("src/tp2/magicFile/" + fileName);
-        //the lines below help you to get the content
-//        Scanner reader = new Scanner(file);
-//        String content = reader.nextLine();
+         Scanner reader;
+		try {
+			reader = new Scanner(file);
+			String content = reader.nextLine();
+	        return content;
+		} catch (FileNotFoundException e) {
+			System.out.println("fichier introuvable");
+		}
         return null;
     }
 
